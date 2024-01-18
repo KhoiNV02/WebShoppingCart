@@ -37,9 +37,9 @@ Các tính năng:
   </ul>
   
 Công nghệ sử dụng:
-front-end:HTML,CSS,JS, TEMPLATE-ENGINE(HANDLEBARJS).
-Back-end:Nodejs-Express.
-Database:MongoDB.
+- front-end:HTML,CSS,JS, TEMPLATE-ENGINE(HANDLEBARJS).
+- Back-end:Nodejs-Express.
+- Database:MongoDB.
 
 Mô tả API:
 - GET /api/v1/products: lấy tất cả sản phẩm được người dùng chọn trước đó từ database khi người dùng truy cập vào web.
