@@ -4,7 +4,7 @@
 B1: Bật Terminal và gõ dòng lệnh 'npm i' để hệ thống tiến hành cài đặt các gói cần thiết.<br>
 B2: Gõ lệnh 'npm start' để tiến hành chạy chương trình.
 
-- Link Demo sản phẩm:
+- Link Demo sản phẩm: https://shoppingcart1.onrender.com/
 
 - Mô tả cấu trúc các Folder:
   - SRC: chứa toàn bộ source code và các tài nguyên liên quan.
