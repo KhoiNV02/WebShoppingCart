@@ -156,7 +156,7 @@
       for (var i = 0; i < num.length; i++) {
         Sum = parseFloat(price[i].textContent.slice(1)) * parseInt(num[i].textContent) + (parseFloat(Sum));
       }
-      console.log(Sum);
+  
       if (Sum !== '0.00')
         Sum = Sum.toFixed(2);
       else {
@@ -242,7 +242,6 @@
       for (var i = 0; i < removeProduct.length; i++) {
         removeProduct[i].onclick = function (index) {
           return function () {
-            console.log("ID: ", document.querySelectorAll(".idProduct2")[index].textContent);
             var id = document.querySelectorAll(".idProduct2")[index].textContent;
             axios.delete(`{{local}}/api/v1/products/${id}`)
               .then(response => {
@@ -269,17 +268,38 @@
       }
       // Thêm class zoom-out để áp dụng hiệu ứng zoomOut
       cartItem[index].classList.add('zoom-out');
-
       // Đợi cho đến khi hiệu ứng kết thúc, sau đó xóa khối
       cartItem[index].addEventListener('animationend', function () {
         // Xóa cartItem khỏi thằng cha khi hiệu ứng kết thúc
 
         cartItem[index].parentNode.removeChild(cartItem[index]);
-        var addToCart2 = document.querySelectorAll(".NotActive");
-        addToCart2[index].classList.remove("NotActive");
-        addToCart2[index].querySelector("p").style.display = 'block';
-        addToCart2[index].querySelector("img").style.display = 'none';
+
+
+
+         var   ShopItem = document.querySelectorAll('.ShopItem');
+      var index2;
+      for (var i = 0; i < ShopItem.length; i++) {
+        var idItem = ShopItem[i].querySelector(".idProduct").textContent;
+        if (idItem == id) {
+          index2 = i;
+          break;
+        }
+      }
+      console.log(index2);
+        var addToCart2 = document.querySelectorAll(".ShopItemAddToCart");
+        try{
+        addToCart2[index2].classList.remove("NotActive");
+        addToCart2[index2].querySelector("p").style.display = 'block';
+        addToCart2[index2].querySelector("img").style.display = 'none';
+        }
+        catch(errr)
+        {
+
+        }
+       
         remove();
+        Minus();
+        Plus();
         getSum();
       });
 
