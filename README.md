@@ -1,6 +1,6 @@
 # WebShoppingCart
 
-<strong>Cách thức khởi chạy lại dự án:<strong><br>
+<span style="font-size:20px">Cách thức khởi chạy lại dự án:<span><br>
 B1: Bật Terminal và gõ dòng lệnh 'npm i' để hệ thống tiến hành cài đặt các gói cần thiết.<br>
 B2: Gõ lệnh 'npm start' để tiến hành chạy chương trình.
 
