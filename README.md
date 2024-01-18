@@ -1,7 +1,7 @@
 # WebShoppingCart
 
 <span>Cách thức khởi chạy lại dự án:<span><br>
-<p style="font-size:20px">Dòng chữ màu đỏ</p>
+<p style="color:red">Dòng chữ màu đỏ</p>
 B1: Bật Terminal và gõ dòng lệnh 'npm i' để hệ thống tiến hành cài đặt các gói cần thiết.<br>
 B2: Gõ lệnh 'npm start' để tiến hành chạy chương trình.
 
